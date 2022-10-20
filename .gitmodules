@@ -1,0 +1,3 @@
+[submodule "CUtil"]
+	path = CUtil
+	url = https://github.com/Trantarius/CUtil.git
