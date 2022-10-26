@@ -27,13 +27,13 @@ string myString = "this is a string";
 
 (float,float->float) addFloats=(float a,float b->float){
     return a+b;
-}
+};
 
 #easy function declaration
 
 func mulInts = (int a, int b -> int){
     return a*b;
-}
+};
 
 #variadic function
 func variadicFunc = (int...nums -> int){
@@ -41,16 +41,16 @@ func variadicFunc = (int...nums -> int){
     #foreach loop
     for int x in nums{
         sum+=x;
-    }
+    };
 
     int prod=1;
     #for range loop
     for int n in 0...nums.size {
         prod *= nums[n];
-    }
+    };
 
     return sum/prod;
-}
+};
 
 #entrypoint
 func main = (string...args->void){
@@ -58,12 +58,12 @@ func main = (string...args->void){
         print("need an arg");
         #exit program with code 1 (built-in in namespace pep)
         pep:exit(1);
-    }
+    };
 
     #function call, convert string to int
     fibonacci(string:parseInt(args[0]));
 
-}
+};
 
 func fibonacci=(int count->void){
     int a=0;
@@ -74,5 +74,5 @@ func fibonacci=(int count->void){
         a=b;
         b=c;
         print(c);
-    }
-}
+    };
+};
