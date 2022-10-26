@@ -25,16 +25,16 @@ string myString = "this is a string";
 
 # function declaration
 
-(float a, float b -> float) addFloats {
+func(float a, float b -> float) addFloats {
     return a+b;
 };
 
-(int a, int b -> int) mulInts {
+func(int a, int b -> int) mulInts {
     return a*b;
 };
 
 #variadic function
-(int...nums -> int) variadicFunc {
+func(int...nums -> int) variadicFunc {
     int sum=0;
     #foreach loop
     for int x in nums{
@@ -51,7 +51,7 @@ string myString = "this is a string";
 };
 
 #entrypoint
-(string...args->void) main {
+func(string...args->void) main {
     if(args.size<1){
         print("need an arg");
         #exit program with code 1 (built-in in namespace pep)
@@ -63,7 +63,7 @@ string myString = "this is a string";
 
 };
 
-(int count->void) fibonacci{
+func(int count->void) fibonacci{
     int a=0;
     int b=1;
 
