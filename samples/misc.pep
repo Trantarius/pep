@@ -23,20 +23,18 @@ float defaultFloat;#make this 64 bits
 
 string myString = "this is a string";
 
-#verbose function declaration
+# function declaration
 
-(float,float->float) addFloats=(float a,float b->float){
+(float a, float b -> float) addFloats {
     return a+b;
 };
 
-#easy function declaration
-
-func mulInts = (int a, int b -> int){
+(int a, int b -> int) mulInts {
     return a*b;
 };
 
 #variadic function
-func variadicFunc = (int...nums -> int){
+(int...nums -> int) variadicFunc {
     int sum=0;
     #foreach loop
     for int x in nums{
@@ -53,7 +51,7 @@ func variadicFunc = (int...nums -> int){
 };
 
 #entrypoint
-func main = (string...args->void){
+(string...args->void) main {
     if(args.size<1){
         print("need an arg");
         #exit program with code 1 (built-in in namespace pep)
@@ -65,7 +63,7 @@ func main = (string...args->void){
 
 };
 
-func fibonacci=(int count->void){
+(int count->void) fibonacci{
     int a=0;
     int b=1;
 
