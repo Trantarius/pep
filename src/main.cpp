@@ -1,5 +1,6 @@
 #include "CUtil/util.hpp"
+#include "parse.hpp"
 
 int main(){
-    print("hi");
+    parse("samples/misc.pep");
 }

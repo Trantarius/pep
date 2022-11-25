@@ -3,4 +3,4 @@ echo
 echo compiled
 echo
 ./exe
-
+rm exe

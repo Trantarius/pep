@@ -8,7 +8,7 @@ block comments with double #
 ##
 
 # file include
-import path/to/file;
+import "path/to/file";
 
 # types/global declaration
 
