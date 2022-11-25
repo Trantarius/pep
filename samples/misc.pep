@@ -51,7 +51,7 @@ func(int...nums -> int) variadicFunc {
 };
 
 #entrypoint
-func(string...args->void) main {
+func(string...args->void) main{
     if(args.size<1){
         print("need an arg");
         #exit program with code 1 (built-in in namespace pep)
